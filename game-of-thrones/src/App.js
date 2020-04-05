@@ -3,12 +3,12 @@ import './App.css';
 import axios from "axios";
 
 let one = 'http://anapioficeandfire.com/api/characters/16';
-let two = '';
-let three = '';
-let four = '';
-let five = '';
-let six = '';
-let seven = '';
+let two = 'http://www.anapioficeandfire.com/api/houses/378';
+let three = 'http://www.anapioficeandfire.com/api/houses/229';
+let four = 'http://www.anapioficeandfire.com/api/houses/17';
+let five = 'http://www.anapioficeandfire.com/api/characters/901';
+let six = 'http://www.anapioficeandfire.com/api/houses/362';
+let seven = 'http://www.anapioficeandfire.com/api/characters/232';
 
 const requestOne = axios.get(one);
 const requestTwo = axios.get(two);
@@ -18,7 +18,10 @@ const requestFive = axios.get(five);
 const requestSix = axios.get(six);
 const requestSeven = axios.get(seven);
 
-axios
+
+function App() {
+  
+  axios
   .all([requestOne, requestTwo, requestThree, requestFour, requestFive, requestSix, requestSeven])
   .then(
     axios.spread((...responses) => {
@@ -37,8 +40,7 @@ axios
   .catch(errors => {
     console.error(errors);
   });
-
-function App() {
+  
   return (
     <div className="App">
       
