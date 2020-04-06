@@ -2,13 +2,13 @@ import React from 'react';
 import './App.css';
 import axios from "axios";
 
-let one = 'http://anapioficeandfire.com/api/characters/16';
-let two = 'http://www.anapioficeandfire.com/api/houses/378';
-let three = 'http://www.anapioficeandfire.com/api/houses/229';
-let four = 'http://www.anapioficeandfire.com/api/houses/17';
-let five = 'http://www.anapioficeandfire.com/api/characters/901';
-let six = 'http://www.anapioficeandfire.com/api/houses/362';
-let seven = 'http://www.anapioficeandfire.com/api/characters/232';
+let one = 'https://anapioficeandfire.com/api/characters/16';
+let two = 'https://www.anapioficeandfire.com/api/houses/378';
+let three = 'https://www.anapioficeandfire.com/api/houses/229';
+let four = 'https://www.anapioficeandfire.com/api/houses/17';
+let five = 'https://www.anapioficeandfire.com/api/characters/901';
+let six = 'https://www.anapioficeandfire.com/api/houses/362';
+let seven = 'https://www.anapioficeandfire.com/api/characters/232';
 
 const requestOne = axios.get(one);
 const requestTwo = axios.get(two);
