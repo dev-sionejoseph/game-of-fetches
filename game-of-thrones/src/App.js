@@ -42,7 +42,16 @@ class App extends Component {
         const responseSix = responses[5].data;
         const responseSeven = responses[6].data;
   
-        this.setState({isLoaded:true})
+        this.setState({
+          isLoaded:true,
+          answer1:responseOne.born,
+          answer2:responseTwo.region,
+          answer3:responseThree.coatOfArms,
+          answer4:responseFour,
+          answer5:responseFive,
+          answer6:responseSix,
+          answer7:responseSeven
+        })
 
         console.log(responseOne, responseTwo, responseThree, responseFour, responseFive, responseSix, responseSeven);
       })
